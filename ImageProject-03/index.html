@@ -2,6 +2,7 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"> </script>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
   </head>
   <body>
     <a-scene>
@@ -42,6 +43,61 @@
       <!a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
       <a-plane position="0 0 -4" rotation="-90 0 0" width="40" height="40" color="black"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
+
+// Add a camera and cursor for interactivity
+        <a-camera>
+        <a-cursor></a-cursor>
+        </a-camera>
+
+        <a-entity camera look-controls>
+        <a-entity cursor="fuse: true; fuseTimeout: 500"
+            position="0 0 -1"
+            geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+            material="color: black; shader: flat">
+        </a-entity>
+        </a-entity>
+
+// Artwork description box and text prototype
+        <!a-box id="hover-box" position="0 1 -9" color="#4CC3D2" depth="0.5" height="1" width="1"></a-box>
+        <!a-entity id="hover-text" position="0 1.9 -9" text="value: Artwork Description; color: black; align: center; width: 5" visible="false" ></a-entity>
+        
+//
+
+// Add a background plane for the text to improve readability
+        <a-box id="hover-object" geometry="primitive: box" position="0 1 -9" material="color: blue" width="1" height="1" depth="0.5"></a-box>
+        <a-entity id="text-background" geometry="primitive: plane; height: 1.5; width: 2" material="color: black" position="0 2 -8.9" visible="false"></a-entity>
+        <a-entity id="hover-text" text="value: Hover over me; color: blue; width: 5" position="1.75 2 -8.8" visible="false"></a-entity>
+
     </a-scene>
+
+
+//Script 1 Prototype for hover interaction with text
+    <!script>
+      const box = document.querySelector('#hover-box');
+      const text = document.querySelector('#hover-text');
+
+      box.addEventListener('mouseenter', () => {
+        text.setAttribute('visible', 'true');
+      });
+
+      box.addEventListener('mouseleave', () => {
+        text.setAttribute('visible', 'false');
+      });
+    </script>
+//Script 2 Prototype for hover interaction with text and background
+        <script>
+        const hoverObject = document.getElementById('hover-object');
+        const hoverText = document.getElementById('hover-text');
+
+        hoverObject.addEventListener('mouseenter', () => {
+            hoverText.setAttribute('visible', 'true');
+            document.getElementById('text-background').setAttribute('visible', 'true');
+        });
+
+        hoverObject.addEventListener('mouseleave', () => {
+            hoverText.setAttribute('visible', 'false');
+            document.getElementById('text-background').setAttribute('visible', 'false');
+        });
+    </script>
   </body>
 </html>
