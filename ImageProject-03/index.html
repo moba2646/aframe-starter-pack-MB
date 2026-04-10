@@ -68,18 +68,24 @@
             material="color: black; shader: flat">
         </a-entity>
         </a-entity>
-<a-sky src="Assets/BG_Test4.jpg" ></a-sky>
+//Sky
+<a-sky src="Assets/BG_Edit_1.png" ></a-sky>
 // Artwork description box and text prototype
         <!a-box id="hover-box" position="0 1 -9" color="#4CC3D2" depth="0.5" height="1" width="1"></a-box>
         <!a-entity id="hover-text" position="0 1.9 -9" text="value: Artwork Description; color: black; align: center; width: 5" visible="false" ></a-entity>
         
 //
 
-// Add a background plane for the text to improve readability
+// Art description boxes + text + txtBG
+        //Box 1 - Wrong Way
         <a-box id="hover-object" geometry="primitive: box" position="-2 1 -9.75" material="color: blue" width="1" height="1" depth="0.5"></a-box>
         <a-entity id="text-background" geometry="primitive: plane; height: 1.5; width: 2" material="color: black" position="-2 2 -9.76" visible="false"></a-entity>
         <a-entity id="hover-text" text="value: Art Description; color: white; width: 5" position="-0.25 2 -9.75" visible="false"></a-entity>
-
+       
+        //Box 2 - Tyler
+        <a-box id="hover-object-2" geometry="primitive: box" position="-10 1 -9.75" material="color: blue" width="1" height="1" depth="0.5"></a-box>
+        <a-entity id="text-background-2" geometry="primitive: plane; height: 1.5; width: 2" material="color: black" position="-10 2 -9.76" visible="false"></a-entity>
+        <a-entity id="hover-text-2" text="value: Art Description; color: white; width: 5" position="-8.25 2 -9.75" visible="false"></a-entity>
     </a-scene>
 
 
@@ -95,7 +101,8 @@
       box.addEventListener('mouseleave', () => {
         text.setAttribute('visible', 'false');
       });
-    </script>
+    <!/script>
+
 //Script 2 Prototype for hover interaction with text and background
         <script>
         const hoverObject = document.getElementById('hover-object');
@@ -109,6 +116,21 @@
         hoverObject.addEventListener('mouseleave', () => {
             hoverText.setAttribute('visible', 'false');
             document.getElementById('text-background').setAttribute('visible', 'false');
+        });
+    </script>
+//Box 2
+    <script>
+        const hoverObject2 = document.getElementById('hover-object-2');
+        const hoverText2 = document.getElementById('hover-text-2');
+
+        hoverObject2.addEventListener('mouseenter', () => {
+            hoverText2.setAttribute('visible', 'true');
+            document.getElementById('text-background-2').setAttribute('visible', 'true');
+        });
+
+        hoverObject2.addEventListener('mouseleave', () => {
+            hoverText2.setAttribute('visible', 'false');
+            document.getElementById('text-background-2').setAttribute('visible', 'false');
         });
     </script>
   </body>
