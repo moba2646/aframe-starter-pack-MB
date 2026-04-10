@@ -3,6 +3,7 @@
   <head>
     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"> </script>
     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
   </head>
   <body>
     <a-scene>
@@ -25,6 +26,8 @@
 
       <a-image rotation="0 0 0" width="4" height="4" position="-8 2.5 -10" src="Assets/Tyler.JPG"></a-image>
       <a-box position="-8 1 -10.51" width="5" height="8" rotation="0 0 0" color="grey"></a-box>
+
+
 //Side 2
       <a-image rotation="0 0 0" width="4" height="4" position="8 2.5 10" src="Assets/Fragmentation.png"></a-image>
       <a-box position="8 1 10.51" width="5" height="8" rotation="0 0 0" color="grey"></a-box>
@@ -34,9 +37,13 @@
 
       <a-image rotation="0 -180 0" width="4" height="4" position="-8 2.5 10" src="Assets/Adjust_My_Life.jpg"></a-image>
       <a-box position="-8 1 10.51" width="5" height="8" rotation="0 0 0" color="grey"></a-box>
+
+
 //Side 3
       <a-image rotation="0 90 0" width="4" height="4" position="11 2.5 0" src="Assets/Tensegrity Table.JPG"></a-image>
       <a-box position="11.51 1 0" width="5" height="8" rotation="0 90 0" color="grey"></a-box>
+
+
 //Side 4
       <a-image rotation="0 90 0" width="4" height="4" position="-11 2.5 0" src="Assets/BigShoesToFill.PNG"></a-image>
       <a-box position="-11.51 1 0" width="5" height="8" rotation="0 90 0" color="grey"></a-box>
@@ -46,7 +53,8 @@
       <!a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
       <!a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
       <a-plane position="0 0 -4" rotation="-90 0 0" width="40" height="40" color="black"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+      <a-sky color=black></a-sky>
+      
 
 // Add a camera and cursor for interactivity
         <a-camera>
@@ -60,7 +68,7 @@
             material="color: black; shader: flat">
         </a-entity>
         </a-entity>
-
+<a-sky src="Assets/BGedit.png" ></a-sky>
 // Artwork description box and text prototype
         <!a-box id="hover-box" position="0 1 -9" color="#4CC3D2" depth="0.5" height="1" width="1"></a-box>
         <!a-entity id="hover-text" position="0 1.9 -9" text="value: Artwork Description; color: black; align: center; width: 5" visible="false" ></a-entity>
