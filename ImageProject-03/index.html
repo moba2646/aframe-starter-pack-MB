@@ -19,40 +19,45 @@
       </a-assets>
 //Side 1
       <a-image rotation="0 0 0" width="4" height="4" position="0 2.5 -10" src="Assets/Piece 2.png"></a-image>
-      <a-box position="0 1 -10.51" width="5" height="8" rotation="0 0 0" color="grey"></a-box>
+      <a-box position="0 1 -10.51" width="5" height="8" rotation="0 0 0" color=#bb2026></a-box>
 
       <a-image rotation="0 0 0" width="4" height="4" position="8 2.5 -10" src="Assets/Digital_Collage.JPG"></a-image>
-      <a-box position="8 1 -10.51" width="5" height="8" rotation="0 0 0" color="grey"></a-box>
+      <a-box position="8 1 -10.51" width="5" height="8" rotation="0 0 0" color=#15276b></a-box>
 
       <a-image rotation="0 0 0" width="4" height="4" position="-8 2.5 -10" src="Assets/Tyler.JPG"></a-image>
-      <a-box position="-8 1 -10.51" width="5" height="8" rotation="0 0 0" color="grey"></a-box>
+      <a-box position="-8 1 -10.51" width="5" height="8" rotation="0 0 0" color=#024f46></a-box>
+
+      <a-box position="0 1 -15" width="10" height="20" rotation="0 0 0" src="Assets/Metal063_2K-PNG_Roughness.png"></a-box>
+    <a-entity id="TITLE" text="value:  MONTY'S MUSEUM ; color: white; width: 20" position="6 9 -14" visible="true"></a-entity>
+    <a-entity id="TITLE" text="value:  Hover over the boxes to read about my art! ; color: white; width: 10" position="0.75 7.5 -14" visible="true"></a-entity>
+
 
 
 //Side 2
       <a-image rotation="0 0 0" width="4" height="4" position="8 2.5 10" src="Assets/Fragmentation.png"></a-image>
-      <a-box position="8 1 10.51" width="5" height="8" rotation="0 0 0" color="grey"></a-box>
+      <a-box position="8 1 10.51" width="5" height="8" rotation="0 0 0" color=#0c151b></a-box>
 
       <a-image rotation="0 -180 0" width="4" height="4" position="0 2.5 10" src="Assets/The_Most_Painful.jpg"></a-image>
-      <a-box position="0 1 10.51" width="5" height="8" rotation="0 0 0" color="grey"></a-box>
+      <a-box position="0 1 10.51" width="5" height="8" rotation="0 0 0" color=#fc7b7c></a-box>
 
       <a-image rotation="0 -180 0" width="4" height="4" position="-8 2.5 10" src="Assets/Adjust_My_Life.jpg"></a-image>
-      <a-box position="-8 1 10.51" width="5" height="8" rotation="0 0 0" color="grey"></a-box>
+      <a-box position="-8 1 10.51" width="5" height="8" rotation="0 0 0" color=#515356></a-box>
 
 
 //Side 3
       <a-image rotation="0 90 0" width="4" height="4" position="11 2.5 0" src="Assets/Tensegrity Table.JPG"></a-image>
-      <a-box position="11.51 1 0" width="5" height="8" rotation="0 90 0" color="grey"></a-box>
-
+      <a-box position="11.51 1 0" width="5" height="8" rotation="0 90 0" color=#cdbfb4></a-box>
+    
 
 //Side 4
       <a-image rotation="0 90 0" width="4" height="4" position="-11 2.5 0" src="Assets/BigShoesToFill.PNG"></a-image>
-      <a-box position="-11.51 1 0" width="5" height="8" rotation="0 90 0" color="grey"></a-box>
+      <a-box position="-11.51 1 0" width="5" height="8" rotation="0 90 0" color=#477a93></a-box>
 
       <!basic Shapes>
       <!a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
       <!a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
       <!a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="40" height="40" color="black"></a-plane>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="40" height="40" src="Assets/Tiles074_4K-JPG_Roughness.jpg"></a-plane>
       <a-sky color=black></a-sky>
       
 
@@ -78,43 +83,43 @@
 
 // Art description boxes + text + txtBG
         //Box 1 - Wrong Way
-        <a-box id="hover-object" geometry="primitive: box" position="-2 1 -9.75" material="color: blue" width="1" height="1" depth="0.5"></a-box>
+        <a-box id="hover-object" geometry="primitive: box" position="-2 1 -9.75" material="color: #bb2026" width="1" height="1" depth="0.5"></a-box>
         <a-entity id="text-background" geometry="primitive: plane; height: 1.5; width: 2" material="color: black" position="-2 2 -9.76" visible="false"></a-entity>
-        <a-entity id="hover-text" text="value: “Lost Direction” is about not knowing where to go, and being overwhelmed with all the different directions of life. It’s my interpretation of what comes after rejecting “The Plan”. I used various shades of red as the paths, against a blue background to try and convey the internal conflict of choosing. The text included is an insecurity of mine, thinking that no matter which way I go, it will be the wrong one. While it doesn’t seem very complex, it took a while to figure out where I wanted the paths to go to make the piece interesting and slightly chaotic, while maintaining an appealing composition without too much negative space. ; color: white; width: 1.7" position="-2 2.1 -9.75" visible="false"></a-entity>
+        <a-entity id="hover-text" text="value: “Lost Direction” is about not knowing where to go, and being overwhelmed with all the different directions of life. It’s my interpretation of what comes after rejecting “The Plan”. I used various shades of red as the paths, against a blue background to try and convey the internal conflict of choosing. The text included is an insecurity of mine, thinking that no matter which way I go, it will be the wrong one. While it doesn’t seem very complex, it took a while to figure out where I wanted the paths to go to make the piece interesting and slightly chaotic, while maintaining an appealing composition without too much negative space. ; color: white; width: 1.5" position="-2 2.1 -9.75" visible="false"></a-entity>
        
         //Box 2 - Tyler
-        <a-box id="hover-object-2" geometry="primitive: box" position="-10 1 -9.75" material="color: blue" width="1" height="1" depth="0.5"></a-box>
+        <a-box id="hover-object-2" geometry="primitive: box" position="-10 1 -9.75" material="color: #024f46" width="1" height="1" depth="0.5"></a-box>
         <a-entity id="text-background-2" geometry="primitive: plane; height: 1.5; width: 2" material="color: black" position="-10 2 -9.76" visible="false"></a-entity>
-        <a-entity id="hover-text-2" text="value: Art Description; color: white; width: 5" position="-8.25 2 -9.75" visible="false"></a-entity>
+        <a-entity id="hover-text-2" text="value: A photo of Rap and hip-hop artist ‘Tyler the Creator’ during his performance at the Ball Arena for his ‘Chromakopia’ tour. A large bridge was lowered over the crowd, allowing Tyler to perform directly over his fans, and allowed me to take a photo with him directly centered. The venue lights gave Tyler a beautiful spotlight, creating the perfect opportunity for a photo.; color: white; width: 1.5" position="-10 2 -9.75" visible="false"></a-entity>
         //Box 3 - Digital Collage
-        <a-box id="hover-object-3" geometry="primitive: box" position="6 1 -9.75" material="color: blue" width="1" height="1" depth="0.5"></a-box>
+        <a-box id="hover-object-3" geometry="primitive: box" position="6 1 -9.75" material="color: #15276b" width="1" height="1" depth="0.5"></a-box>
         <a-entity id="text-background-3" geometry="primitive: plane; height: 1.5; width: 2" material="color: black" position="6 2 -9.76" visible="false"></a-entity>
-        <a-entity id="hover-text-3" text="value: Art Description; color: white; width: 5" position="7.75 2 -9.75" visible="false"></a-entity>
+        <a-entity id="hover-text-3" text="value: This piece was part of my Studio Art class, where we had to create a photoshop collage inspired by a piece of art. I chose to create my collage based on “Masterpiece” by Roy Lichtenstein. I saw an opportunity to combine the pieces' strong use of red, blue, and yellow with my love for fashion to create a collage similar to a fashion magazine. The layout resembles a blend between comic books and fashion lookbooks, inspired by the original artworks' pop art style.; color: white; width: 1.5" position="6 2.1 -9.75" visible="false"></a-entity>
 
         //Box 4 - Fragmentation (Side 2)
-        <a-box id="hover-object-4" geometry="primitive: box" position="10 1 9.75" material="color: blue" width="1" height="1" depth="0.5"></a-box>
-        <a-entity id="text-background-4" geometry="primitive: plane; height: 1.5; width: 2; "rotation="0 180 0" material="color: black" position="10 2 9.76" visible="false"></a-entity>
-        <a-entity id="hover-text-4" text="value: Art Description; color: white; width: 5" rotation="0 180 0" position="8.25 2 9.75" visible="false"></a-entity>
+        <a-box id="hover-object-4" geometry="primitive: box" position="10 1 9.75" material="color: #0c151b" width="1" height="1" depth="0.5"></a-box>
+        <a-entity id="text-background-4" geometry="primitive: plane; height: 1.5; width: 2; "rotation="0 180 0" material="color: black" position="10 2.1 9.76" visible="false"></a-entity>
+        <a-entity id="hover-text-4" text="value: Fragmentation was part of my Studio Art class. It is a hectic, intense piece with a lot of elements and colors, representing the mental fragmentation that can happen when I try to meet every expectation from myself, my family, my job, my school, and society (or what I think society expects of me). It’s supposed to be both organized and messy, trying to fulfill every aspect of life and being too many versions of myself at once. The different colored heads are a direct reference to the idea of multiple versions of myself, while the shapes in the background are a more subtle way to show the fragmentation. The shapes were cut out from one larger shape, then I changed the sizes and angles slightly, showing how the pieces don’t fit together anymore.; color: white; width: 1.5" rotation="0 180 0" position="10 2.1 9.75" visible="false"></a-entity>
 
         //Box 5 - The Most Painful (Side 2)
-        <a-box id="hover-object-5" geometry="primitive: box" position="2 1 9.75" material="color: blue" width="1" height="1" depth="0.5"></a-box>
+        <a-box id="hover-object-5" geometry="primitive: box" position="2 1 9.75" material="color: #fc7b7c" width="1" height="1" depth="0.5"></a-box>
         <a-entity id="text-background-5" geometry="primitive: plane; height: 1.5; width: 2; "rotation="0 180 0" material="color: black" position="2 2 9.76" visible="false"></a-entity>
-        <a-entity id="hover-text-5" text="value: Art Description; color: white; width: 5" rotation="0 180 0" position="0.25 2 9.75" visible="false"></a-entity>
+        <a-entity id="hover-text-5" text="value: This piece was part of my IMG classes Project 1. My entire project revolved around heartbreak and the loss of self that comes from it. This untitled piece serves as a reminder that loving someone can lead to neglecting oneself, forgetting who you are, and the beauty of one's uniqueness. The quote used in this piece is intentionally placed covering my head, emphasizing the idea of losing oneself in a relationship, and forgetting how special one is.; color: white; width: 1.5" rotation="0 180 0" position="2 2.05 9.75" visible="false"></a-entity>
 
         //Box 6 - Adjust My Life (Side 2)
-        <a-box id="hover-object-6" geometry="primitive: box" position="-6 1 9.75" material="color: blue" width="1" height="1" depth="0.5"></a-box>
-        <a-entity id="text-background-6" geometry="primitive: plane; height: 1.5; width: 2; "rotation="0 180 0" material="color: black" position="-6 2 9.76" visible="false"></a-entity>
-        <a-entity id="hover-text-6" text="value: Art Description; color: white; width: 5" rotation="0 180 0" position="-7.75 2 9.75" visible="false"></a-entity>
+        <a-box id="hover-object-6" geometry="primitive: box" position="-6 1 9.75" material="color: #515356" width="1" height="1" depth="0.5"></a-box>
+        <a-entity id="text-background-6" geometry="primitive: plane; height: 1.5; width: 2; "rotation="0 180 0" material="color: black" position="-6 2.1 9.76" visible="false"></a-entity>
+        <a-entity id="hover-text-6" text="value: This piece was part of my IMG classes Project 1. My project was focused around heartbreak and losing yourself in a relationship, during and after. This piece is meant to represent my thoughts after the relationship ended, reminding myself that disrespect should not be tolerated, and I can adjust to the absence of someone I cared for deeply. The piece is meant to resemble a stencil and spray paint on a concrete wall, emphasizing this message won’t go away. The stencil is of myself, and the text is a font created from my own handwriting, adding to the personal importance of this piece.; color: white; width: 1.5" rotation="0 180 0" position="-6 2.1 9.75" visible="false"></a-entity>
 
         //Box 7 - Tensegrity Table (Side 3)
-        <a-box id="hover-object-7" geometry="primitive: box" position="10.5 1 -2" rotation="0 90 90" material="color: blue" width="1" height="1" depth="0.5"></a-box>
+        <a-box id="hover-object-7" geometry="primitive: box" position="10.5 1 -2" rotation="0 90 90" material="color: #cdbfb4" width="1" height="1" depth="0.5"></a-box>
         <a-entity id="text-background-7" geometry="primitive: plane; height: 1.5; width: 2; "rotation="0 -90 180" material="color: black" position="10.5 2 -2" visible="false"></a-entity>
-        <a-entity id="hover-text-7" text="value: Art Description; color: white; width: 5" rotation="0 -90 0" position="10.49 2 -0.25" visible="false"></a-entity>
+        <a-entity id="hover-text-7" text="value: This project was for my Studio Art class’ woodworking unit. For this project I challenged myself to build a tensegrity table. A tensegrity table is a structural design that appears to defy gravity, with a top portion seeming to float above a base. It operates by balancing tension (cables/chains) and compression (solid frame components) to create a stable, floating effect. It took a long time to get the table to balance, but when I finally got it to work, it was able to bear a considerable amount of weight, and I ended up with one of my favorite pieces of all time.; color: white; width: 1.5" rotation="0 -90 0" position="10.49 2.1 -2" visible="false"></a-entity>
 
         //Box 8 - Big Shoes To Fill (Side 4)
-        <a-box id="hover-object-8" geometry="primitive: box" position="-10.5 1 2" rotation="0 90 90" material="color: blue" width="1" height="1" depth="0.5"></a-box>
+        <a-box id="hover-object-8" geometry="primitive: box" position="-10.5 1 2" rotation="0 90 90" material="color: #477a93" width="1" height="1" depth="0.5"></a-box>
         <a-entity id="text-background-8" geometry="primitive: plane; height: 1.5; width: 2; "rotation="0 90 180" material="color: black" position="-10.5 2 2" visible="false"></a-entity>
-        <a-entity id="hover-text-8" text="value: Art Description; color: white; width: 5" rotation="0 90 0" position="-10.49 2 0.25" visible="false"></a-entity>
+        <a-entity id="hover-text-8" text="value: This piece, titled “Big shoes to fill”, is a photoshop collage of a few of my favorite characters from various pieces of media who all share the common theme of a role or duty being passed on from one generation to the next. It highlights the journey of coming to age, where the torch from the previous generation is being passed down to mine. This piece holds a special place in my heart, as it includes some of my all time favorite characters in media, and was one of my first photoshop projects I was proud of.; color: white; width: 1.5" rotation="0 90 0" position="-10.49 2.1 2" visible="false"></a-entity>
     </a-scene>
 
 
